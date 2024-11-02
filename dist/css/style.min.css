@@ -1,0 +1,251 @@
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBold.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Medium.woff2") format("woff2"), url("../fonts/OpenSans-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-SemiBold.woff2") format("woff2"), url("../fonts/OpenSans-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: OpenSans;
+  font-display: swap;
+  src: url("../fonts/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  list-style: none;
+}
+
+li::marker {
+  font-variant-numeric: none;
+}
+
+.header {
+  padding: 1rem 0;
+}
+
+nav {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav > a img {
+  width: 200px;
+}
+
+ul {
+  display: flex;
+  gap: 2rem;
+  transition: 0.5s;
+}
+
+li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+li a:hover {
+  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+}
+
+label {
+  display: none;
+}
+
+#burger-toggle {
+  display: none;
+}
+
+@media (max-width: 784px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 10px 0;
+    z-index: 999;
+  }
+  .header__container {
+    padding: 0 1rem;
+  }
+  label {
+    position: relative;
+    display: block;
+    height: 25px;
+    width: 30px;
+  }
+  label::after, label::before, label span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    transition: 0.3s;
+  }
+  label::before {
+    content: "";
+    top: 0;
+  }
+  label::after {
+    content: "";
+    bottom: 0;
+  }
+  label span {
+    top: 11px;
+  }
+  nav > a img {
+    width: 100px;
+  }
+  #burger-toggle:checked ~ label::after {
+    transform: rotate(45deg);
+    bottom: 10px;
+  }
+  #burger-toggle:checked ~ label::before {
+    transform: rotate(-45deg);
+    top: 12px;
+  }
+  #burger-toggle:checked ~ label span {
+    transform: rotate(-45deg);
+    top: 12px;
+  }
+  ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #151515;
+    padding-top: 200px;
+    z-index: -1;
+    flex-direction: column;
+    text-align: center;
+    left: -100vw;
+    right: 100vw;
+  }
+  #burger-toggle:checked ~ ul {
+    left: 0;
+    right: 0;
+  }
+  li a {
+    font-size: 24px;
+  }
+}
+.about {
+  padding-top: 2rem;
+}
+.about__container {
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.about__title {
+  font-size: 2rem;
+}
+.about__content_bottom > img {
+  float: right;
+  margin-left: 2rem;
+  margin-right: 0;
+  animation: appearance 1s forwards 1.5s;
+}
+.about__img {
+  max-width: 25%;
+  float: left;
+  margin-right: 2rem;
+  border-radius: 10px;
+  opacity: 0;
+  animation: appearance 1s forwards 0.5s;
+}
+.about__text {
+  font-size: 1.5rem;
+  padding: 0 2rem;
+  opacity: 0;
+  transform: scale(0.9);
+  animation: emersion 1s forwards 1s ease-out;
+}
+
+@keyframes appearance {
+  to {
+    opacity: 1;
+  }
+}
+@keyframes emersion {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@media (width <= 784px) {
+  .about {
+    margin-top: 40px;
+  }
+  .about__container {
+    padding: 0.8rem;
+  }
+  .about__content_bottom > img {
+    float: none;
+    margin: 0;
+    animation: appearance 1s forwards 1.5s;
+  }
+  .about__title {
+    font-size: 0.8rem;
+  }
+  .about__img {
+    max-width: 100%;
+    margin: 0 auto;
+    float: none;
+  }
+  .about__text {
+    font-size: 0.8rem;
+    padding: 1rem 0;
+  }
+}
+body {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}

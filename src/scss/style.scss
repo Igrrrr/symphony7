@@ -1,0 +1,22 @@
+@import 'fonts';
+@import 'modules/reset';
+@import 'modules/variables';
+@import 'modules/header';
+@import 'modules/about';
+
+body {
+  font-family: OpenSans;
+  font-size: 16px;
+  font-weight: 400;
+  //line-height: 1.5rem;
+  //background-color: pink;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+
+
