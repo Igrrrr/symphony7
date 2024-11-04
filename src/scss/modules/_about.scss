@@ -26,7 +26,7 @@
     border-radius: 10px;
     opacity: 0;
     animation: appearance 1s forwards 0.5s;
-
+    transform: translateY(-10px);
   }
 
   &__text {
@@ -40,7 +40,10 @@
 }
 
 @keyframes appearance {
-  to {opacity: 1}
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 @keyframes emersion {
   to {

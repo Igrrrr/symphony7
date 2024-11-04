@@ -198,6 +198,7 @@ label {
   border-radius: 10px;
   opacity: 0;
   animation: appearance 1s forwards 0.5s;
+  transform: translateY(-10px);
 }
 .about__text {
   font-size: 1.5rem;
@@ -210,6 +211,7 @@ label {
 @keyframes appearance {
   to {
     opacity: 1;
+    transform: translateY(0);
   }
 }
 @keyframes emersion {
