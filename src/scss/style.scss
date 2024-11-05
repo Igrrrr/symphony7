@@ -18,6 +18,22 @@ body {
   margin: 0 auto;
 }
 
+.title {
+  font-size: 2rem;
+}
+
+.description {
+  text-align: justify;
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: emersion 1s forwards 1s ease-out;
+}
+
+.source {
+  margin-top: 1rem;
+}
+
 
 
 

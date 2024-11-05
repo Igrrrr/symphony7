@@ -8,19 +8,18 @@
     gap: 2rem;
   }
 
-  &__title {
-    font-size: 2rem;
-  }
+  // &__title {
+  //   font-size: 2rem;
+  // }
 
-  &__content_bottom > img {
+  &__content_bottom > &__img {
    float: right;
    margin-left: 2rem;
    margin-right: 0;
-   animation: appearance 1s forwards 1.5s;
   }
 
   &__img {
-    max-width: 25%;
+    max-width: 30%;
     float: left;
     margin-right: 2rem;
     border-radius: 10px;
@@ -29,13 +28,13 @@
     transform: translateY(-10px);
   }
 
-  &__text {
-    font-size: 1.5rem;
-    padding: 0 2rem;
-    opacity: 0;
-    transform: scale(0.9);
-    animation: emersion 1s forwards 1s ease-out;
-  }
+  // &__text {
+  //   font-size: 1.5rem;
+  //   padding: 0 2rem;
+  //   opacity: 0;
+  //   transform: scale(0.95);
+  //   animation: emersion 1s forwards 1s ease-out;
+  // }
 
 }
 

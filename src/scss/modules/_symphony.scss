@@ -1,0 +1,18 @@
+.symphony {
+  margin-top: 2rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+
+  &__img {
+    max-width: 100%;
+    margin-top: 2rem;
+    border-radius: 10px;
+    opacity: 0;
+    animation: appearance 1s forwards 0.5s;
+    transform: translateY(-10px);
+  }
+}

@@ -85,7 +85,7 @@ li a {
   font-size: 1.5rem;
 }
 li a:hover {
-  text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
+  text-decoration: 3px underline #139E96;
 }
 
 label {
@@ -182,30 +182,19 @@ label {
   flex-direction: column;
   gap: 2rem;
 }
-.about__title {
-  font-size: 2rem;
-}
-.about__content_bottom > img {
+.about__content_bottom > .about__img {
   float: right;
   margin-left: 2rem;
   margin-right: 0;
-  animation: appearance 1s forwards 1.5s;
 }
 .about__img {
-  max-width: 25%;
+  max-width: 30%;
   float: left;
   margin-right: 2rem;
   border-radius: 10px;
   opacity: 0;
   animation: appearance 1s forwards 0.5s;
   transform: translateY(-10px);
-}
-.about__text {
-  font-size: 1.5rem;
-  padding: 0 2rem;
-  opacity: 0;
-  transform: scale(0.9);
-  animation: emersion 1s forwards 1s ease-out;
 }
 
 @keyframes appearance {
@@ -245,6 +234,23 @@ label {
     padding: 1rem 0;
   }
 }
+.symphony {
+  margin-top: 2rem;
+}
+.symphony__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.symphony__img {
+  max-width: 100%;
+  margin-top: 2rem;
+  border-radius: 10px;
+  opacity: 0;
+  animation: appearance 1s forwards 0.5s;
+  transform: translateY(-10px);
+}
+
 body {
   font-family: OpenSans;
   font-size: 16px;
@@ -254,4 +260,20 @@ body {
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.description {
+  text-align: justify;
+  font-size: 1.5rem;
+  opacity: 0;
+  transform: scale(0.95);
+  animation: emersion 1s forwards 1s ease-out;
+}
+
+.source {
+  margin-top: 1rem;
 }
