@@ -1,3 +1,8 @@
 .facts {
   margin-top: 2rem;
+
+  &__list {
+    display: list-item;
+    list-style-type: disc;
+  }
 }
