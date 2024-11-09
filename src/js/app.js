@@ -13,6 +13,13 @@
 //     },
 //   },
 // });
-const slider = new Splide("#slider");
 
-slider.mount();
+// const slider = new Splide("#slider", {
+//   perPage: 2,
+//   gap: "30px",
+// });
+
+// slider.mount();
+
+import Splide from "@splidejs/splide";
+new Splide(".splide").mount();

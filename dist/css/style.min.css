@@ -250,6 +250,11 @@ label {
   transform: translateY(-10px);
 }
 
+.splide__list {
+  min-height: 300px;
+  background-color: yellowgreen;
+}
+
 .facts {
   margin-top: 2rem;
 }
