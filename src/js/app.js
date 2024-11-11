@@ -23,3 +23,12 @@
 
 import Splide from "@splidejs/splide";
 new Splide(".splide").mount();
+
+const anchors = document.querySelectorAll("a[href*='#']");
+anchors.forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault;
+    const targetId = anchor.getAttribute("href");
+    document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
+  });
+});
