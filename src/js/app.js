@@ -22,7 +22,11 @@
 // slider.mount();
 
 import Splide from "@splidejs/splide";
-new Splide(".splide").mount();
+//new Splide(".splide").mount();
+const slider = new Splide("#slider");
+slider.mount();
+
+//new Splide("#slider").mount();
 
 const anchors = document.querySelectorAll("a[href*='#']");
 anchors.forEach((anchor) => {

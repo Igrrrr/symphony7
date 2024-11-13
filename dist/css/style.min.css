@@ -60,31 +60,28 @@ li::marker {
 .header {
   padding: 1rem 0;
 }
-
-nav {
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-nav > a img {
+.header__img {
   width: 200px;
 }
-
-ul {
+.header__list {
   display: flex;
   gap: 2rem;
   transition: 0.5s;
 }
-
-li a {
+.header__link {
   color: black;
   text-decoration: none;
   font-size: 1.5rem;
 }
-li a:hover {
+.header__link:hover {
   text-decoration: 3px underline #139E96;
+}
+
+.menu {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 label {
@@ -107,6 +104,26 @@ label {
   }
   .header__container {
     padding: 0 1rem;
+  }
+  .header__img {
+    width: 100px;
+  }
+  .header__list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #151515;
+    padding-top: 200px;
+    z-index: -1;
+    flex-direction: column;
+    text-align: center;
+    left: -100vw;
+    right: 100vw;
+  }
+  .header__link {
+    font-size: 24px;
   }
   label {
     position: relative;
@@ -132,9 +149,6 @@ label {
   label span {
     top: 11px;
   }
-  nav > a img {
-    width: 100px;
-  }
   #burger-toggle:checked ~ label::after {
     transform: rotate(45deg);
     bottom: 10px;
@@ -150,26 +164,9 @@ label {
   a:has(~ #burger-toggle:checked) {
     z-index: -1;
   }
-  ul {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #151515;
-    padding-top: 200px;
-    z-index: -1;
-    flex-direction: column;
-    text-align: center;
-    left: -100vw;
-    right: 100vw;
-  }
   #burger-toggle:checked ~ ul {
     left: 0;
     right: 0;
-  }
-  li a {
-    font-size: 24px;
   }
 }
 .about {
