@@ -209,9 +209,6 @@ label {
   .about {
     margin-top: 40px;
   }
-  .about__container {
-    padding: 0.8rem;
-  }
   .about__content_bottom > img {
     float: none;
     margin: 0;
@@ -248,7 +245,6 @@ label {
 }
 
 .splide__list {
-  min-height: 300px;
   background-color: yellowgreen;
 }
 
@@ -289,6 +285,9 @@ body {
 }
 
 @media (width <= 640px) {
+  .container {
+    padding: 0 0.8rem;
+  }
   .title {
     font-size: 1.5rem;
   }
