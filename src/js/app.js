@@ -21,9 +21,11 @@
 
 // slider.mount();
 
-import Splide from "@splidejs/splide";
+//import Splide from "@splidejs/splide";
 //new Splide(".splide").mount();
-const slider = new Splide("#slider");
+const slider = new Splide("#slider", {
+  perPage: 3,
+});
 slider.mount();
 
 //new Splide("#slider").mount();
