@@ -25,6 +25,12 @@
 //new Splide(".splide").mount();
 const slider = new Splide("#slider", {
   perPage: 3,
+  gap: "2rem",
+  breakpoints: {
+    640: {
+      perPage: 1,
+    },
+  },
 });
 slider.mount();
 
