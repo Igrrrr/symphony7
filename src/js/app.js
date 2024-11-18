@@ -26,6 +26,7 @@
 const slider = new Splide("#slider", {
   perPage: 3,
   gap: "2rem",
+  perMove: "1",
   breakpoints: {
     640: {
       perPage: 1,
