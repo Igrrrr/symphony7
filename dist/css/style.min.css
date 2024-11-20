@@ -174,7 +174,6 @@ label {
   padding-top: 2rem;
 }
 .about__container {
-  background-color: yellowgreen;
   display: flex;
   flex-direction: column;
   gap: 2rem;
