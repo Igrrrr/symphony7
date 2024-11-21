@@ -244,10 +244,9 @@ label {
   transform: translateY(-10px);
 }
 
-.splide__list {
-  background-color: yellowgreen;
+.splide {
+  margin-top: 2rem;
 }
-
 .facts {
   margin-top: 2rem;
 }
