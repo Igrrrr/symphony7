@@ -11,6 +11,10 @@ ul {
   list-style-type: none;
 }
 
-li::marker {
-  font-variant-numeric: none;
+li {
+  list-style-type: none;
 }
+
+// li::marker {
+//   font-variant-numeric: none;
+// }

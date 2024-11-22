@@ -53,8 +53,8 @@ ul {
   list-style-type: none;
 }
 
-li::marker {
-  font-variant-numeric: none;
+li {
+  list-style-type: none;
 }
 
 .header {
@@ -247,12 +247,16 @@ label {
 .splide {
   margin-top: 2rem;
 }
-.facts {
+.splide__list {
   margin-top: 2rem;
 }
-.facts__list {
-  display: list-item;
-  list-style-type: disc;
+.splide__slide {
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+.structure {
+  margin-top: 2rem;
 }
 
 body {
