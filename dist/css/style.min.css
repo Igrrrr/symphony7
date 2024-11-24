@@ -259,6 +259,17 @@ label {
   margin-top: 2rem;
 }
 
+.footer {
+  padding: 2rem 0;
+}
+.footer__container {
+  display: flex;
+  justify-content: center;
+}
+.footer__img {
+  width: 300px;
+}
+
 body {
   font-family: OpenSans;
   font-size: 16px;
