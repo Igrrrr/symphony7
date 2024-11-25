@@ -1,13 +1,6 @@
 .header {
   padding: 1rem 0;
-  //position: fixed;
-  //top: 0;
-  //left: 0;
-  //right: 0;
-  //padding: 20px 0;
-  //z-index: 999;
-  //background-color: #151515;
-  //background-color: red;
+
   &__img {
     width: 200px;
   }
@@ -31,35 +24,11 @@
  }
 
 .menu {
-  //max-width: 90%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-// nav > a img {
-//   width: 200px;
-// }
-
-// ul {
-//   display: flex;
-//   gap: 2rem;
-//   transition: .5s;
-// }
-
-// li a {
-//   color: black;
-//   text-decoration: none;
-//   font-size: 1.5rem;
-
-//   &:hover {
-//     text-decoration: 3px underline $color-blue;
-//     //color: aqua;
-//     //text-shadow: 0px 0px 50px 6px rgba(19, 158, 150, 1), 0px 0px 50px 11px rgba(208, 213, 131, 1)
-//     //text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF, 0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18, 0 0 55px #49FF18, 0 0 75px #49ff18;
-//   }
-// }
 
 label {
   display: none;
@@ -78,7 +47,6 @@ label {
     right: 0;
     padding: 10px 0;
     z-index: 999;
-    background-color: blue;
 
     &__container {
       padding: 0 1rem;
@@ -137,10 +105,6 @@ label {
     top: 11px;
   }
 
-  // nav > a img {
-  //   width: 100px;
-  // }
-
   #burger-toggle:checked ~ label::after {
     transform: rotate(45deg);
     bottom: 10px;
@@ -160,30 +124,8 @@ label {
     z-index: -1;
   }
 
-
-  // ul {
-  //   position: fixed;
-  //   top: 0;
-  //   left: 0;
-  //   right: 0;
-  //   bottom: 0;
-  //   background-color: #151515;
-  //   padding-top: 200px;
-  //   z-index: -1;
-  //   flex-direction: column;
-  //   text-align: center;
-
-  //   left: -100vw;
-  //   right: 100vw;
-
-  // }
-
   #burger-toggle:checked ~ ul {
     left: 0;
     right: 0;
   }
-
-  // li a {
-  //   font-size: 24px;
-  // }
 }
