@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: OpenSans;
   font-display: swap;
@@ -59,6 +60,8 @@ li {
 
 .header {
   padding: 1rem 0;
+  position: fixed;
+  z-index: 2;
 }
 .header__img {
   width: 200px;
@@ -76,6 +79,18 @@ li {
 }
 .header__link:hover {
   text-decoration: 3px underline #139E96;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #04AA6D;
+  width: 0%; /* Начальная ширина индикатора */
 }
 
 .menu {

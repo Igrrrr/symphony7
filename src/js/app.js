@@ -18,3 +18,16 @@ anchors.forEach((anchor) => {
     document.querySelector(targetId).scrollIntoView({ behavior: "smooth" });
   });
 });
+
+window.onscroll = function () {
+  scrollIndication();
+};
+
+function scrollIndication() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop; // Текущая позиция прокрутки
+  var height = document.documentElement.scrollHeight;
+  document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
