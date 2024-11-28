@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: OpenSans;
   font-display: swap;
@@ -58,9 +57,22 @@ li {
   list-style-type: none;
 }
 
+.progress-container {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 8px;
+  background: #D0D583;
+}
+
+.progress-bar {
+  height: 8px;
+  background: #139E96;
+  width: 0%;
+}
+
 .header {
   padding: 1rem 0;
-  position: fixed;
   z-index: 2;
 }
 .header__img {
@@ -79,18 +91,6 @@ li {
 }
 .header__link:hover {
   text-decoration: 3px underline #139E96;
-}
-
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
-}
-
-.progress-bar {
-  height: 8px;
-  background: #04AA6D;
-  width: 0%; /* Начальная ширина индикатора */
 }
 
 .menu {
@@ -221,7 +221,7 @@ label {
 }
 @media (width <= 784px) {
   .about {
-    margin-top: 40px;
+    padding: 60px;
   }
   .about__content_bottom > img {
     float: none;

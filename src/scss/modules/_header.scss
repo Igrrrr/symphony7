@@ -1,6 +1,6 @@
 .header {
   padding: 1rem 0;
-  position: fixed;
+  //position: fixed;
   z-index: 2;
 
   &__img {
@@ -23,18 +23,6 @@
       text-decoration: 3px underline $color-blue;
     }
   }
-}
-
-.progress-container {
-  width: 100%;
-  height: 8px;
-  background: #ccc;
-}
-
-.progress-bar {
-  height: 8px;
-  background: #04AA6D;
-  width: 0%; /* Начальная ширина индикатора */
 }
 
 .menu {

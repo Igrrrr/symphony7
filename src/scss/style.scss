@@ -1,6 +1,7 @@
 @import 'fonts';
 @import 'modules/reset';
 @import 'modules/variables';
+@import 'modules/progress-scale';
 @import 'modules/header';
 @import 'modules/about';
 @import 'modules/symphony';
@@ -13,6 +14,7 @@ body {
   font-size: 16px;
   font-weight: 400;
 }
+
 
 .container {
   max-width: 1200px;
