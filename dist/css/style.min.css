@@ -139,6 +139,7 @@ label {
   }
   .header__link {
     font-size: 24px;
+    color: #D0D583;
   }
   label {
     position: relative;
@@ -156,13 +157,16 @@ label {
   label::before {
     content: "";
     top: 0;
+    background-color: #D0D583;
   }
   label::after {
     content: "";
     bottom: 0;
+    background-color: #D0D583;
   }
   label span {
     top: 11px;
+    background-color: #139E96;
   }
   #burger-toggle:checked ~ label::after {
     transform: rotate(45deg);

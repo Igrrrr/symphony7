@@ -75,6 +75,7 @@ label {
 
     &__link {
       font-size: 24px;
+      color: $color-green;
     }
   }
 
@@ -96,15 +97,18 @@ label {
   label::before {
     content: "";
     top: 0;
+    background-color: $color-green;
   }
 
   label::after {
     content: "";
     bottom: 0;
+    background-color: $color-green;
   }
 
   label span {
     top: 11px;
+    background-color: $color-blue;
   }
 
   #burger-toggle:checked ~ label::after {
