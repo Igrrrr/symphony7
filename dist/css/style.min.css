@@ -225,7 +225,7 @@ label {
 }
 @media (width <= 784px) {
   .about {
-    padding: 60px;
+    padding-top: 70px;
   }
   .about__content_bottom > img {
     float: none;
