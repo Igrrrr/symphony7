@@ -5,6 +5,8 @@ const slider = new Splide("#slider", {
   breakpoints: {
     640: {
       perPage: 1,
+      padding: { top: "2rem", left: "1rem", right: "1rem" },
+      arrows: false,
     },
   },
 });
