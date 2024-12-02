@@ -10,3 +10,11 @@
     width: 300px;
   }
 }
+
+@media(width <= 784px) {
+  .footer__img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+}
