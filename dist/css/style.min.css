@@ -321,6 +321,7 @@ body {
 
 .source {
   margin-top: 1rem;
+  font-style: italic;
 }
 
 @media (width <= 640px) {
